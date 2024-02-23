@@ -8,6 +8,16 @@
         <title>Aplicação</title>
     </head>
     <body>
-        <h1>Olá Mundo!!</h1>
+        <% 
+            String nome = request.getParameter("nome");
+        %>
+
+        <h1>Boas Vindas!</h1>
+
+        <%
+            out.print("Olá!" + nome + ".");
+        %>
+
+        <p>Como você está, <%= nome%></p>
     </body>
 </html>
